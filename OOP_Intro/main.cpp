@@ -9,8 +9,8 @@ void babylonian_algo();
 int main(){
     oz_conversion();
     babylonian_algo();
+    
     return 0;
-
 }
 
 void oz_conversion(){
