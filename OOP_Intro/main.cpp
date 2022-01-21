@@ -23,7 +23,6 @@ void oz_conversion(){
     
     cout << "################ 1. OZ Conversion #####################" << endl;
     double t_oz = 35273.92;
-    double ton = 1;
     double weight;
     double result;
 
