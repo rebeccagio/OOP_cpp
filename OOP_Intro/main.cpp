@@ -46,9 +46,10 @@ void babylonian_algo(){
      1. Make a guess at the answer (you can pick n/2 as your initial guess).
      2. Compute r = n / guess
      3. Set guess = (guess + r) / 2
-     4. Go back to step 2 for as many iterations as necessary. The more that
-    steps 2 and 3 are repeated, the closer guess will become to the square
-    root of n.
+     4. Go back to step 2 for as many iterations as necessary.The more that
+        steps 2 and 3 are repeated, the closer guess will become to the square
+        root of n.
+    
     Write a program that inputs a double for n and iterates through the
     Babylonian algorithm 100 times. */
         
