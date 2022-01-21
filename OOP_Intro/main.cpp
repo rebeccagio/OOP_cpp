@@ -7,33 +7,25 @@ void oz_conversion();
 void babylonian_algo();
 
 int main(){
-    //oz_conversion();
+    oz_conversion();
     babylonian_algo();
     return 0;
 
 }
 
 void oz_conversion(){
-    //so in the code it would look like this
-
+    /*
+    A metric ton is 35,273.92 ounces. Write a program that will read the weight
+    of a package of breakfast cereal in ounces and output the weight in metric
+    tons as well as the number of boxes needed to yield 1 metric ton of cereal.
+    Your program should allow the user to repeat this calculation as often as
+    the user wishes. */
+    
+    cout << "################ 1. OZ Conversion #####################" << endl;
     double t_oz = 35273.92;
     double ton = 1;
     double weight;
     double result;
-
-    // 1 ton       20oz
-    // _____   x           =
-    // 35k oz
-    
-    
-//    1             // 1 ton
-//    ---       =   // _____
-//    20 oz         // 35k oz
-    
-    
-    // 35273.92 oz      0.000566991 tons
-    // _____        x   ______               =   ______
-    // 1 ton            20oz
 
     cout << "Enter cereal box weight (oz): ";
     cin >> weight;
@@ -45,13 +37,23 @@ void oz_conversion(){
     result = t_oz/ weight;
     
     cout << "This many cereal boxes would equal 1 ton: " << result << " tons"<< endl;
-    // HOW MANY CEREAL BOXES FOR 1 TON
+    cout << "End of Problem 1" << endl;
 }
 
 void babylonian_algo(){
-    // looking for the sqrt of n
-    // ex: sqrt(25) = 5
-    
+    /*
+    The Babylonian algorithm to compute the square root of a number n is as
+    follows:
+     1. Make a guess at the answer (you can pick n/2 as your initial guess).
+     2. Compute r = n / guess
+     3. Set guess = (guess + r) / 2
+     4. Go back to step 2 for as many iterations as necessary. The more that
+    steps 2 and 3 are repeated, the closer guess will become to the square
+    root of n.
+    Write a program that inputs a double for n and iterates through the
+    Babylonian algorithm 100 times. */
+        
+    cout << "################ 2. Babylonian Algorithm #####################" << endl;
     double n;
     
     cout << "Enter n: ";
@@ -72,5 +74,6 @@ void babylonian_algo(){
     }
     
     cout << "Answer = " << guess << endl;
+    cout << "End of Problem 2" << endl;
 }
 
